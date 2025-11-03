@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<title>Labels A4 3x2 – TEXT ONLY</title>
+<style>
+  @page { size: A4; margin: 10mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Noto Sans Thai", Arial, sans-serif; }
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5mm;
+    height: calc(297mm - 20mm);
+  }
+  .label {
+    padding: 6mm;
+    font-size: 11pt;
+    line-height: 1.25;
+    display: flex; align-items: center; justify-content: flex-start;
+  }
+  .addr { white-space: pre-line; word-break: break-word; }
+  @media print { .no-print { display: none; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <!-- Labels will be dynamically inserted here -->
+</div>
+</body>
+</html>

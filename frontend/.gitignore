@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+.vite/
+
+# local
+.env.local
+.DS_Store
